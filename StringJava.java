@@ -5,6 +5,10 @@ class StringJava{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String");
         String str = sc.nextLine();
-        System.out.println(str);
+        String str2 = "";
+        for(int i=0; i<str.length(); i++){
+            str2 =str.charAt(i)+str2 ;
+        }
+        System.out.println(str2);
     }
 }
