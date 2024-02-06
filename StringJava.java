@@ -5,11 +5,9 @@ class StringJava{
         Scanner sc = new Scanner(System.in);
         
         String str1 = "Rushikesh Tekale";
-        String str2 = "Tekale";
+        String str2 = "Tekale Rushikesh";
         
-        //If str1 is lexicographically greater than str2, it returns a positive integer.
-        //If str1 is lexicographically less than str2, it returns a negative integer.
-        //If str1 and str2 are equal lexicographically, it returns 0.
-        System.out.println(str1.compareTo(str2));
+        //The equals() method returns true if the two strings contain the same sequence of characters; otherwise, it returns false.
+        System.out.println(str1.equals(str2));
     }
 }
