@@ -7,9 +7,9 @@ class StringJava{
         String str1 = "Rushikesh Tekale";
         String str2 = "Tekale";
         
-        //str1 is the string in which you want to search for str2.
-        //str2 is the substring that you want to find within str1.
-        //It will compre str2 in str1 and return the first index of the str2
-        System.out.println(str1.indexOf(str2));
+        //If str1 is lexicographically greater than str2, it returns a positive integer.
+        //If str1 is lexicographically less than str2, it returns a negative integer.
+        //If str1 and str2 are equal lexicographically, it returns 0.
+        System.out.println(str1.compareTo(str2));
     }
 }
