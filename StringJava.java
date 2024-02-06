@@ -5,7 +5,7 @@ class StringJava{
         Scanner sc = new Scanner(System.in);
         
         String str = "Rushikesh Tekale";
-        //give character at index 5
-        System.out.println(str.charAt(5));
+        //It will return the first index of that character
+        System.out.println(str.indexOf('h'));
     }
 }
