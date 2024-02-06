@@ -5,7 +5,7 @@ class StringJava{
         Scanner sc = new Scanner(System.in);
         
         String str = "Rushikesh Tekale";
-        //Convert all string in uppercase
-        System.out.println(str.toUpperCase());
+        //Convert all string in lowercase
+        System.out.println(str.toLowerCase());
     }
 }
