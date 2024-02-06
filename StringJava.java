@@ -5,7 +5,7 @@ class StringJava{
         Scanner sc = new Scanner(System.in);
         
         String str = "Rushikesh Tekale";
-        //Convert all string in lowercase
-        System.out.println(str.toLowerCase());
+        //give character at index 5
+        System.out.println(str.charAt(5));
     }
 }
