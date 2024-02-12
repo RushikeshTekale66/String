@@ -3,6 +3,7 @@ import java.util.*;
 class StringJava{
     public static void main(String[] args) {
         String str = "Rushikesh Tekale";
-        System.out.println(str);
+        String str2 = "Rushikesh Tekale";
+        System.out.println(str+str2);
     }
 }
