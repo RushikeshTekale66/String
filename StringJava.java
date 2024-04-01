@@ -3,7 +3,6 @@ import java.util.*;
 class StringJava{
     public static void main(String[] args) {
         String str = "Rushikesh Tekale";
-        String str2 = "Rushikesh Tekale";
-        System.out.println(str+str2);
+        System.out.println(str.indexOf('T'));
     }
 }
