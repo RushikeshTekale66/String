@@ -1,8 +1,9 @@
 import java.util.*;
-//Index of Character
+//Contat two string without any space
 class StringJava{
     public static void main(String[] args) {
-        String str = "Rushikesh Tekale";
-        System.out.println(str.indexOf('T'));
+        String str = "Rushikesh";
+        String str2 = "Tekale";
+        System.out.println(str.trim()+str2);
     }
 }
