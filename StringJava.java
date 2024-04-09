@@ -1,5 +1,5 @@
 import java.util.*;
-//Reverse the string 
+//Index of Character
 class StringJava{
     public static void main(String[] args) {
         String str = "Rushikesh Tekale";
