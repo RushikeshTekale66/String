@@ -1,5 +1,7 @@
 // Java program to find longest common prefix of
 // given array of words.
+// common Prefix of Array element
+
 import java.util.*;
 
 public class StringJava
