@@ -1,32 +1,19 @@
-import java.util.*;
-
-/**
- * StringJava
- */
-public class StringJava {
-
-    // sort string
-    public static void main(String [] args){
-        String str = "zxcdftegdffYGSHDSJI";
-
-        // Without using sort 
-        char [] arr = str.toCharArray();
-        char temp;
-        for(int i=0; i<arr.length; i++){
-            for(int j=i+1; j<arr.length; j++){
-                if(arr[i]>arr[j]){
-                    temp = arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-            }
-        }
-        System.out.println("Without Sort : "+ new String(arr));
-
-        // Using Arrays.sort
-        char[] arr2 = str.toCharArray();
-        Arrays.sort(arr2);
-        System.out.println("With sort : "+ new String(arr2));
-        
-    }
+class StringJava{
+	public static void main(String[] args) {
+	    //Store in same memory location (String pool)
+	    String s1 = "Rushikesh";
+	    String s2 = "Rushikesh";
+	    
+	    System.out.println("String Pool Elements : ");
+	    System.out.println(s1.equals(s2));
+	    System.out.println(s1==s2);
+	    
+	    //Store in different memory location (Heap)
+	    String s3 = new String("Tekale");
+	    String s4 = new String("Tekale");
+	    
+	    System.out.println("Object in heap memory : ");
+	    System.out.println(s3.equals(s4));
+	    System.out.println(s3==s4);
+	}
 }
