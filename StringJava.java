@@ -1,21 +1,23 @@
-class RemoveString{
+class StringJava{
 	public static void main(String[] args) {
-		String str = "Rushikesh Ramesh Tekale";
+		String str = "rushikeshtekale";
 		
-		//1
-		String [] arr = str.split(" ");
+		char [] stra = str.toCharArray();
 		
-		for(int i=0; i<arr.length; i++){
-		    if(!arr[i].equals("Ramesh")){
-		    	System.out.print(arr[i] + " ");
-		    }
+		for(int i=0; i<stra.length; i++){
+			for(int j=i+1; j<stra.length; j++){
+				if(stra[i]>stra[j]){
+					char temp = stra[i];
+					stra[i]= stra[j];
+					stra[j]= temp;
+				}
+			}
 		}
-
-		//2
-		System.out.println();
-		String [] arr2 = str.split("Ramesh");
-		for(int i=0; i<arr2.length; i++){
-			System.out.print(arr2[i]);
+		
+		System.out.println("Sorted String ");
+		for(char ch : stra){
+			System.out.print(ch);
 		}
+		
 	}
 }
